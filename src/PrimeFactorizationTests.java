@@ -20,7 +20,9 @@ public class PrimeFactorizationTests {
 	
 	@Test
 	public void test2() {
-		assertTrue(pf.getPrimeFactorization(2).get(0) == 2);
+		ArrayList<Integer> result = pf.getPrimeFactorization(2);
+		assertTrue(result.size() == 1);
+		assertTrue(result.get(0) == 2);
 	}
 	
 	@Test
