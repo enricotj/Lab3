@@ -27,7 +27,9 @@ public class PrimeFactorizationTests {
 	
 	@Test
 	public void test3() {
-		assertTrue(pf.getPrimeFactorization(3).get(0) == 3);
+		ArrayList<Integer> result = pf.getPrimeFactorization(3);
+		assertTrue(result.size() == 1);
+		assertTrue(result.get(0) == 3);
 	}
 	
 	@Test
