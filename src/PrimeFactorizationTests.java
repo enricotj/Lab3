@@ -62,6 +62,6 @@ public class PrimeFactorizationTests {
 		test.add(3);
 		test.add(3);
 		
-		assertTrue(pf.getPrimeFactorization(8).equals(test));
+		assertTrue(pf.getPrimeFactorization(9).equals(test));
 	}
 }

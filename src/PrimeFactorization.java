@@ -18,6 +18,9 @@ public class PrimeFactorization {
 				n /= p;
 				p = 2;
 			}
+			else {
+				p = nextPrime(p);
+			}
 		} while (true);
 		return primeFactors;
 	}
