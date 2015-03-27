@@ -15,5 +15,9 @@ public class PrimeFactorizationTests {
 	public void test1() {
 		assertTrue(pf.getPrimeFactorization(1).isEmpty());
 	}
-
+	
+	@Test
+	public void test2() {
+		assertTrue(pf.getPrimeFactorization(2).get(0) == 2);
+	}
 }
