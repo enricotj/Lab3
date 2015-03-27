@@ -30,10 +30,19 @@ public class PrimeFactorizationTests {
 	
 	@Test
 	public void test4() {
-		ArrayList<Integer> testFour = new ArrayList<Integer>();
-		testFour.add(2);
-		testFour.add(2);
+		ArrayList<Integer> test = new ArrayList<Integer>();
+		test.add(2);
+		test.add(2);
 		
-		assertTrue(pf.getPrimeFactorization(4).equals(testFour));
+		assertTrue(pf.getPrimeFactorization(4).equals(test));
+	}
+	
+	@Test
+	public void test6() {
+		ArrayList<Integer> test = new ArrayList<Integer>();
+		test.add(2);
+		test.add(3);
+		
+		assertTrue(pf.getPrimeFactorization(6).equals(test));
 	}
 }
