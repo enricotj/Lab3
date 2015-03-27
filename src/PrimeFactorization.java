@@ -3,9 +3,22 @@ import java.util.ArrayList;
 public class PrimeFactorization {
 	public ArrayList<Integer> getPrimeFactorization(int x) {
 		ArrayList<Integer> primeFactors = new ArrayList<Integer>();
-		if (isPrime(x)) {
-			primeFactors.add(x);
-		}
+		int n = x;
+		int p = 2;
+		do {
+			if (n == 1) {
+				break;
+			}
+			else if (isPrime(n)) {
+				primeFactors.add(n);
+				break;
+			}
+			else if (n % p == 0) {
+				primeFactors.add(p);
+				n /= p;
+				p = 2;
+			}
+		} while (true);
 		return primeFactors;
 	}
 	
@@ -19,5 +32,16 @@ public class PrimeFactorization {
 			}
 		}
 		return true;
+	}
+	
+	public int nextPrime(int x) {
+		int next = x + 1;
+		while (true) {
+			if (isPrime(next)) {
+				return next;
+			} else {
+				next++;
+			}
+		}
 	}
 }
