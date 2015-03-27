@@ -31,4 +31,13 @@ public class PrimeGenerationTests {
 		assertTrue(result.size() == 1);
 		assertTrue(result.get(0) == 2);
 	}
+	
+	@Test
+	public void test4() {
+		ArrayList<Integer> test = new ArrayList<Integer>();
+		test.add(2);
+		test.add(2);
+		
+		assertTrue(pg.generatePrimes(2).equals(test));
+	}
 }
