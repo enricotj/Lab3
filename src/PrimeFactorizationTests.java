@@ -20,4 +20,9 @@ public class PrimeFactorizationTests {
 	public void test2() {
 		assertTrue(pf.getPrimeFactorization(2).get(0) == 2);
 	}
+	
+	@Test
+	public void test3() {
+		assertTrue(pf.getPrimeFactorization(3).get(0) == 3);
+	}
 }
