@@ -45,4 +45,14 @@ public class PrimeFactorizationTests {
 		
 		assertTrue(pf.getPrimeFactorization(6).equals(test));
 	}
+	
+	@Test
+	public void test8() {
+		ArrayList<Integer> test = new ArrayList<Integer>();
+		test.add(2);
+		test.add(2);
+		test.add(2);
+		
+		assertTrue(pf.getPrimeFactorization(8).equals(test));
+	}
 }
