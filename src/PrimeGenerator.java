@@ -4,10 +4,8 @@ import java.util.List;
 public class PrimeGenerator {
 	public List<Integer> generatePrimes(int x) {
 		ArrayList<Integer> primes = new ArrayList<Integer>();
-		for (int i = 2; i <= x; i++) {
-			if (isPrime(i)) {
-				primes.add(i);
-			}
+		if (isPrime(x)) {
+			primes.add(x);
 		}
 		return primes;
 	}

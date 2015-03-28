@@ -34,7 +34,7 @@ public class PrimeGenerationTests {
 		List<Integer> oneResult = Arrays.asList();
 		
 		List<Integer> twoResult = Arrays.asList(2);
-		List<Integer> threeResult = Arrays.asList(2, 3);
+		List<Integer> threeResult = Arrays.asList(3);
 		
 		List<Integer> elevenResult = Arrays.asList(2, 3, 5, 7, 11);
 		List<Integer> fourResult = Arrays.asList(2, 3);
