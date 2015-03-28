@@ -1,6 +1,5 @@
 import static org.junit.Assert.assertEquals;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
@@ -14,7 +13,7 @@ import org.junit.runners.Parameterized;
 public class PrimeGenerationTests {
 
 	private Integer inputNumber;
-	private ArrayList<Integer> expectedResult;
+	private List<Integer> expectedResult;
 	private PrimeGenerator primeGen;
 
 	@Before
@@ -25,7 +24,7 @@ public class PrimeGenerationTests {
 	// Each parameter should be placed as an argument here
 	// Every time runner triggers, it will pass the arguments
 	// from parameters we defined in primeNumbers() method
-	public PrimeGenerationTests(Integer inputNumber, ArrayList<Integer> expectedResult) {
+	public PrimeGenerationTests(Integer inputNumber, List<Integer> expectedResult) {
 		this.inputNumber = inputNumber;
 		this.expectedResult = expectedResult;
 	}
@@ -37,8 +36,8 @@ public class PrimeGenerationTests {
 	}
 
 	@Test
-	public void testPrimeNumberChecker() {
-		System.out.println("Prime Numbers from 2-" + inputNumber + " (inclusive)");
+	public void testPrimeNumberGenerator() {
+		System.out.println("Generating prime numbers up to and including " + inputNumber);
 		assertEquals(expectedResult, primeGen.generatePrimes(inputNumber));
 	}
 }
