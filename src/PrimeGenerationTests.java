@@ -36,7 +36,6 @@ public class PrimeGenerationTests {
 		return Arrays.asList(new Object[][] { {1, oneResult} });
 	}
 
-	// This test will run 4 times since we have 5 parameters defined
 	@Test
 	public void testPrimeNumberChecker() {
 		System.out.println("Prime Numbers from 2-" + inputNumber + " (inclusive)");
