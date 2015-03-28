@@ -32,7 +32,14 @@ public class PrimeGenerationTests {
 	@Parameterized.Parameters
 	public static Collection<Object[]> primeNumbers() {
 		List<Integer> oneResult = Arrays.asList();
-		return Arrays.asList(new Object[][] { {1, oneResult} });
+		List<Integer> twoResult = Arrays.asList(2);
+		List<Integer> threeResult = Arrays.asList(3);
+		List<Integer> elevenResult = Arrays.asList(11);
+		return Arrays.asList(new Object[][] { 
+				{1, oneResult},
+				{2, twoResult},
+				{3, threeResult},
+				{11, elevenResult}});
 	}
 
 	@Test
